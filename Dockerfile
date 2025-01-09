@@ -1,4 +1,3 @@
-FROM ubuntu/apache2
-RUN apt-get -y install php
+FROM ubuntu/apache2/php
 ADD . /var/www/html 
 CMD apachectl -D FOREGROUND 
